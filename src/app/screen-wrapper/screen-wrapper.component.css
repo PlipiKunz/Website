@@ -1,0 +1,14 @@
+.everything {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+.router-outlet{
+  flex:1;
+  width: 100%;
+}

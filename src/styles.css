@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+.everything {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  height: fit-content;
+  align-items: center;
+}
+
+.central-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: center;
+  background-color: beige;
+  width: 100%;
+  height: 100%;
+}
+
+.wide{
+  display: block;
+  width: 100%;
+  align-items: center;
+}
+
+.margin{
+  margin: 5px;
+}
+.top-margin{
+  margin-top: 5px;
+}
+.left-margin{
+  margin-left: 5px;
+}
+.right-margin{
+  margin-right: 5px;
+}
+.bottom-margin{
+  margin-bottom: 5px;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
