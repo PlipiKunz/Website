@@ -2,8 +2,12 @@
   <app-screen-wrapper-header
     class="wide bottom-margin"
   ></app-screen-wrapper-header>
-  <div class="top-margin bottom-margin router-outlet">
-    <router-outlet></router-outlet>
+  <div class="main-content top-margin bottom-margin">
+    <div class="router-outlet right-margin">
+      <router-outlet></router-outlet>
+    </div>
+
+    <app-side-menu></app-side-menu>
   </div>
   <app-screen-wrapper-footer
     class="wide top-margin"

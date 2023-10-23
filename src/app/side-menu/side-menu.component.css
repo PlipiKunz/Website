@@ -1,0 +1,8 @@
+.menu{
+  background-color: aquamarine;
+  margin-left: 5px;
+  height: fit-content;
+  width: fit-content;
+  position: sticky;
+  top:0;
+  }

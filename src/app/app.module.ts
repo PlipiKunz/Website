@@ -13,6 +13,7 @@ import { ScreenWrapperFooterComponent } from './screen-wrapper-footer/screen-wra
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ScreenWrapperHomeComponent } from './screen-wrapper-home/screen-wrapper-home.component';
+import { SideMenuComponent } from './side-menu/side-menu.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ScreenWrapperHomeComponent } from './screen-wrapper-home/screen-wrapper
     ScreenWrapperHeaderComponent,
     ScreenWrapperFooterComponent,
     ScreenWrapperHomeComponent,
+    SideMenuComponent,
   ],
   imports: [
     BrowserModule,
