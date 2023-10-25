@@ -1,5 +1,5 @@
 .background{
-  background-color: lightsteelblue;
+  background-color: rgb(147, 166, 190);
 }
 
 .everything {
@@ -39,21 +39,6 @@
   transform:rotate(-15deg);
 }
 
- @keyframes marquee{
-            0%{transform: translateX(100%);}
-            100%{transform: translateX(-100%);}
-}
-
-@media all{
-    .horizontal-marquee{
-      animation: marquee 15s linear infinite;
-    }
-}
-
-.marquee-container{
-  overflow: hidden;
-}
-
 .border{
   box-shadow: 0 0 0 1px;
 }
@@ -61,7 +46,6 @@
 .padding{
   padding: 10px;
 }
-
 
 .margin{
   margin: 5px;

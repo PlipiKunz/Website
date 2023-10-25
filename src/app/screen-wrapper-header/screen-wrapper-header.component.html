@@ -1,7 +1,9 @@
-<div class="marquee-container">
-  <p class="horizontal-marquee">This is a marquee made up with css</p>
+<div class="marquee-container border">
+  <p class="horizontal-marquee" (animationiteration)="marqueeNext()">
+    abcdefghijklmnopqrstuvwxyz
+  </p>
 </div>
-<div class="header-column border">
+<div class="header-column border padding">
   <p>Authorization and Guarding Test</p>
 
   <mat-checkbox (change)="authCheck($event)"> Authorize? </mat-checkbox>

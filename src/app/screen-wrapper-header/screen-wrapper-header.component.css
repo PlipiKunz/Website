@@ -8,3 +8,32 @@
   margin: none;
 }
 
+ @keyframes marquee{
+ 0%{
+  left: 100%;
+  }
+  100%{
+    left: -50%;
+  }
+}
+
+@media all{
+    .horizontal-marquee{
+  font-size: 25;
+  padding-top: 12;
+      animation: marquee 15s linear infinite;
+    }
+}
+
+.horizontal-marquee{
+  position: absolute;
+}
+
+.marquee-container{
+  position: relative;
+  height: 20px;
+  font-size: 20px;
+  overflow: hidden;
+  background-color: lavender;
+}
+
