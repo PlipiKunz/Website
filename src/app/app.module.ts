@@ -12,8 +12,10 @@ import { ScreenWrapperHeaderComponent } from './screen-wrapper-header/screen-wra
 import { ScreenWrapperFooterComponent } from './screen-wrapper-footer/screen-wrapper-footer.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatIconModule } from '@angular/material/icon';
 import { ScreenWrapperHomeComponent } from './screen-wrapper-home/screen-wrapper-home.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,11 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
     SideMenuComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     MatCheckboxModule,
+    MatIconModule,
+    HttpClientModule,
 
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
