@@ -10,22 +10,20 @@ import { FakeAuthService } from '../services/fake-auth.service';
 export class ScreenWrapperHeaderComponent {
   constructor(private authService: FakeAuthService) {}
 
-  marquees: string[] = ['This is a marquee made up with css'];
+  marquees: string[] = [
+    'This is a marquee made up with css!',
+    'This is different text!',
+  ];
   marquee_index: number = 0;
 
   authCheck(ob: MatCheckboxChange) {
     this.authService.setStatus(ob.checked);
   }
 
-  marqueeStart(): void {
-    console.log('marquee start!');
-  }
-
   marqueeNext(): void {
-    console.log('marquee next!');
-  }
-
-  marqueeEnd(): void {
-    console.log('marquee end!');
+    this.marquee_index++;
+    if (this.marquee_index >= this.marquees.length) {
+      this.marquee_index = 0;
+    }
   }
 }

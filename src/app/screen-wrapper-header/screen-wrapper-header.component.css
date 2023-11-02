@@ -27,6 +27,7 @@
 
 .horizontal-marquee{
   position: absolute;
+  width: 100%;
 }
 
 .marquee-container{
